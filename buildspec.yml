@@ -5,4 +5,4 @@ phases:
       java: corretto11    
   build:
     commands:
-      - mvn compile -Dgpg.skip=true -Dmaven.repo.local=$CODEBUILD_<file_system_identifier>
+      - mvn compile -Dgpg.skip=true -Dmaven.repo.local=$CODEBUILD_MYTESTEFS
