@@ -1,0 +1,8 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      java: corretto11    
+  build:
+    commands:
+      - mvn compile -Dgpg.skip=true -Dmaven.repo.local=$CODEBUILD_<file_system_identifier>
